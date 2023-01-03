@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.container .chat{
+  width: 40%;
+  height: 500px;
+  border: 5px solid rgb(78, 84, 246);
+  padding: 10px;
+ overflow: hidden;
+}
+.chat-head{
+  text-align: center;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+.container .type{
+  width: 35%;
+  height: auto;
+  border: 5px solid rgb(78, 246, 190);
+  padding: 10px;
+}
+.container .type div{
+  margin-bottom: 25px;
+}
+.container .type input{
+  height: 50px;
+  width:100%;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid gray;
+}
+.container .type button{
+  padding: 10px 20px 10px 20px;
+  background: #212121;
+  color: #ffff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.chat-box{
+  border: 2px solid rgb(70, 70, 70); 
+  padding: 10px;
+  overflow-y: scroll;
+  height:95%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-box p{
+  margin-top: 10px;
+  font-size: 12px;
+}
+.chat-body{
+  margin-top: 5px;
+}
+#you .msg{
+  float: left;
+  background: rgb(73, 104, 147);
+  color: #fff;
+  padding: 10px;
+}
+#you .msg p{
+  color: rgb(70, 70, 70);
+}
+#other .msg{
+  float: right;
+  background: rgb(73, 147, 123);
+  color: #fff;
+  padding: 10px;
+}
+#other .msg p{
+  color: rgb(70, 70, 70);
+}
